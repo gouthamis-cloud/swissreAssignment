@@ -1,0 +1,9 @@
+SELECT *
+FROM (
+    SELECT *, DENSE_RANK() OVER (ORDER BY salary DESC) AS rank
+    FROM employees
+) ranked
+WHERE rank = :n;
+
+
+Dense_Rank() assigns a rank/value to each row in descending order which allows us to filter using subquery
