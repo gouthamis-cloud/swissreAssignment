@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "6a2a906a-38d9-4e2a-93d6-8f05bb626df1",
+		"name": "SwissRe Excel API",
+		"description": "All Excel-based API endpoints for SwissRe assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30831182"
+	},
+	"item": [
+		{
+			"name": "Gratuity Eligible Employees",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/gouth/OneDrive/Desktop/employees.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/excel/gratuity-eligible",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"excel",
+						"gratuity-eligible"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employees With Salary Greater Than Manager",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/excel/salary-greater-than-manager",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"excel",
+						"salary-greater-than-manager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Build Hierarchy JSON",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/gouth/OneDrive/Desktop/employees.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/excel/hierarchy-json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"excel",
+						"hierarchy-json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export Same Excel Back",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/gouth/OneDrive/Desktop/employees.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/excel/export",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"excel",
+						"export"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
